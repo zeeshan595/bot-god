@@ -2,10 +2,11 @@
     "name": "node-js-boilerplate",
     "version": "0.0.1",
     "description": "An application to quickly help you get started",
+    "main": "dist/index.js",
     "scripts": {
         "build": "tsc",
-        "start": "npm run install && npm run build && node dist/index.js",
-        "start:prod": "node dist/index.js"
+        "start:prod": "node dist/index.js",
+        "start": "npm run build && node dist/index.js"
     },
     "dependencies": {
         "discord.js": "^11.5.1",
