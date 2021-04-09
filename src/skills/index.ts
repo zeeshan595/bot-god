@@ -1,8 +1,9 @@
-import { Message } from 'discord.js';
+import { Client, Message } from 'discord.js';
 import { Hello } from './hello';
 
 export interface Skill {
-    onMessage: (message: Message) => Promise<void>;
+    onInit: (bot: Client) => Promise<void>;
+    onMessage: (bot: Client, message: Message) => Promise<void>;
 }
 
 export const skills: Skill[] = [
