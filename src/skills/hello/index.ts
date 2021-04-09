@@ -20,7 +20,7 @@ export class Hello implements Skill {
                         channel.delete();
                     }
                 }
-            }, 10000);
+            }, 100000);
         });
     };
 
