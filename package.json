@@ -2,10 +2,9 @@
     "name": "node-js-boilerplate",
     "version": "0.0.1",
     "description": "An application to quickly help you get started",
-    "main": "src/index.ts",
     "scripts": {
         "build": "tsc",
-        "start": "npm run build && node dist/index.js",
+        "start": "npm run install && npm run build && node dist/index.js",
         "start:prod": "node dist/index.js"
     },
     "dependencies": {
