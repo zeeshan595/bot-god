@@ -39,8 +39,8 @@ export class Hello implements Skill {
             permissionOverwrites: [
                 {
                     id: everyone.id,
-                    deny: 1049600,
-                    denied: 1049600,
+                    deny: 1024,
+                    denied: 1024,
                 },
                 {
                     id: message.member,
